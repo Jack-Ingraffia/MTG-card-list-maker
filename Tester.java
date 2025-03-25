@@ -21,6 +21,7 @@ public class Tester {
 
                 System.out.println("What is the card's mana value? ");
                 int mana = in.nextInt();
+                in.nextLine();
 
                 System.out.println("What is the card's color? ");
                 String color = in.nextLine();
@@ -48,6 +49,7 @@ public class Tester {
                 else if (line.toLowerCase().equals("enchantment")) {
                     System.out.println("Is the enchantment an equipment? (true/false) ");
                     boolean equip = in.nextBoolean();
+                    in.nextLine();
                     Card temp = new Enchantment(name, mana, color, text, equip);
                     cards.add(temp);
                 } 
@@ -60,10 +62,12 @@ public class Tester {
                 else if (line.toLowerCase().equals("planeswalker")) {
                     System.out.println("What is the loyalty? ");
                     int loyal = in.nextInt();
+                    in.nextLine();
                     System.out.println("What is the planeswalker's type? ");
                     String typeP = in.nextLine();
                     System.out.println("Is it legendary? (true/false) ");
                     boolean boolP = in.nextBoolean();
+                    in.nextLine();
                     Card temp = new Planeswalker(name, mana, color, text, loyal, typeP, boolP);
                     cards.add(temp);
                 } 
@@ -71,12 +75,15 @@ public class Tester {
                 else if (line.toLowerCase().equals("creature")) {
                     System.out.println("What is the power? ");
                     int power = in.nextInt();
+                    in.nextLine();
                     System.out.println("What is the toughness? ");
                     int toughness = in.nextInt();
+                    in.nextLine();
                     System.out.println("What is the creature type? ");
                     String typeC = in.nextLine();
                     System.out.println("Is it legendary? (true/false) ");
                     boolean boolC = in.nextBoolean();
+                    in.nextLine();
                     Card temp = new Creature(name, mana, color, text, power, toughness, typeC, boolC);
                     cards.add(temp);
                 }
