@@ -16,6 +16,6 @@ public class Instant extends Card {
 
     @Override
     public String toString() {
-        return super.getName() + " is a " + super.getColor() + " instant " + useCase + ", with a mana value of " + super.getManaValue() + ". This card says, " + super.getText();
+        return super.getName() + " is a " + super.getColor() + " instant " + useCase + " spell, with a mana value of " + super.getManaValue() + ". This card says, " + super.getText();
     }
 }
