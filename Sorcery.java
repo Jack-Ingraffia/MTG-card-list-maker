@@ -16,6 +16,6 @@ public class Sorcery extends Card {
 
     @Override
     public String toString() {
-        return super.getName() + " is a " + super.getColor() + " Sorcery " + useCase + ", with a mana value of " + super.getManaValue() + ". This card says, " + super.getText();
+        return super.getName() + " is a " + super.getColor() + " Sorcery " + useCase + " spell, with a mana value of " + super.getManaValue() + ". This card says, " + super.getText();
     }
 }
